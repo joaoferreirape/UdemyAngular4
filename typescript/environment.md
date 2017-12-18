@@ -1,24 +1,35 @@
+# Arquivos de configurações
 
-# Configuração do repositório git
+## Configuração do repositório git
 
+Salvar localmente as configurações de usuário e senha (credenciais)
 ```
 git config --local credential.helper 'store'
 ```
 
-# Instalação de pacotes
+### Enviar alterações
 
+```
+git add .
+git commit -m "Curso de Angular 4"
+git push origin master
+```
+
+## Instalação de pacotes
+
+Pacote principal do angular/cli
 ```
 sudo npm install -g @angular/cli
   ng -v
 ```
 
+Pacote de compilação do typescript
 ```
 sudo npm install -g typescript
   tsc -v
 ```
 
-Para compilar de modo stand alone ->
-
+Para compilar de modo stand alone
 ```
 tsc arquivo.ts
 ```
