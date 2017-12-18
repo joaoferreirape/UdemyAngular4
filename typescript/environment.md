@@ -1,8 +1,8 @@
 # Arquivos de configurações
 
-## Configuração do repositório git
+## Configuração do repositório git e comandos
 
-Salvar localmente as configurações de usuário e senha (credenciais)
+### Salvar localmente as configurações de usuário e senha (credenciais)
 ```
 git config --local credential.helper 'store'
 ```
