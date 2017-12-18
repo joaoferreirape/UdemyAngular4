@@ -1,6 +1,6 @@
-# Arquivos de configurações
+# Arquivos de configurações e comandos
 
-## Configuração do repositório git e comandos
+## Configuração do repositório e comandos git
 
 ### Salvar localmente as configurações de usuário e senha (credenciais)
 ```
@@ -20,22 +20,23 @@ git push origin master
 Pacote principal do angular/cli
 ```
 sudo npm install -g @angular/cli
-  ng -v
+// Verificar versão
+ng -v
 ```
 
 Pacote de compilação do typescript
 ```
 sudo npm install -g typescript
-  tsc -v
+// Verificar versão
+tsc -v
 ```
 
-Para compilar de modo stand alone
+Para compilar um arquivo typescript de modo stand-alone
 ```
 tsc arquivo.ts
 ```
 
-Para compilar de modo automático pelo atom, adicionar ao arquivo **tsconfig.json** do projeto:
-
+Para compilar de modo automático pelo atom, adicionar ao arquivo **tsconfig.json** do projeto
 ```
 {
   "compileOnSave": true,
