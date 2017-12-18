@@ -1,4 +1,10 @@
 
+# Configuração do repositório git
+
+```
+git config --local credential.helper 'store'
+```
+
 # Instalação de pacotes
 
 ```
