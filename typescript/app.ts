@@ -1,16 +1,19 @@
-// Declarações de variáveis padrão
-let typeAny: any
-let typeBoolean: boolean
-let typeString: string
-let typeNumber: number
-let typeArray: Array<number>
+import {Spacecraft, Containership} from './base-ships'
+import {MilleniumFalcon} from './starfighters'
 
-// Declarações de variáveis do curso
-let message: string = "Help-me, Obi-Wan Kenobi. You're my only hope!"
-console.log(message)
+let ship = new Spacecraft('hyperdrive')
+ship.jumIntoHyperspace()
 
-let episode: number = 4
-episode = '4'
-console.log("This is episode " + 4)
-episode = episode + 1
-console.log("Next episode is " + episode)
+
+
+
+let falcon = new MilleniumFalcon()
+falcon.jumIntoHyperspace()
+
+
+
+let goodForTheJob = ( ship: Containership ) =>  ship.cargoContainers > 2
+
+
+
+console.log(`Is falcon good for the job? ${goodForTheJob(falcon) ? 'yes' : 'no'}`)
