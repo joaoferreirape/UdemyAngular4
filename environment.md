@@ -45,3 +45,20 @@ Para compilar de modo automático pelo atom, adicionar ao arquivo **tsconfig.jso
   }
 }
 ```
+
+## Rodar o aplivativo
+
+```
+ng serve --progress --verbose --watch
+```
+
+## Criar um novo componente
+
+```
+ng generate component nomeComponente --spec=false
+```
+ou, na forma reduzida
+```
+ng g c nomeComponente --spec=false
+```
+a diretiva --spec=false é usada para não gerar os arquivos de teste
